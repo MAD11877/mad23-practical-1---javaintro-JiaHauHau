@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Question5
 {
@@ -27,6 +28,30 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
+     int integer = in.nextInt();
+      ArrayList<Integer>allnum = new ArrayList<Integer>();
+      Integer[] array = {};
+      for(int i = 0; i < integer; i++)
+      {
+        int set = in.nextInt();
+        allnum.add(set);
+      }
+      array = allnum.toArray(array);
+      int mCount = 0;
+      int mValue = 0;
+      int count = 0;
+      for(int i = 0; i<array.length; i++)
+      {
+        count = 0;
+        for(int q = 0; q<array.length; q++)
+        {
+          if(array[q] == array[i]) {count++;}
+        }
+        if(count>mCount){
+          mValue = array[i];
+        }
+      }
+      System.out.print(mValue);
     
   }
 }
