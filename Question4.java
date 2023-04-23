@@ -19,5 +19,9 @@ public class Question4
      
     Scanner in = new Scanner(System.in);
     
+    for (int i=number; i>0; i--){
+      System.out.print("*");
+    }
+    
   }
 }
