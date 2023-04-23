@@ -35,7 +35,7 @@ public class Question5
         int set = in.nextInt();
         allnum.add(set);
       }
-      array = number_set.toArray(array);
+      array = allnum.toArray(array);
       int mCount = 0;
       int mValue = 0;
       int count = 0;
@@ -50,7 +50,7 @@ public class Question5
           mValue = array[i];
         }
       }
-      System.out.print(maxValue);
+      System.out.print(mValue);
     
   }
 }
